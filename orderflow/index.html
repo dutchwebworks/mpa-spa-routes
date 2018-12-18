@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Orderflow</title>
+</head>
+
+<body>
+    <div class="wrapper">   
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="orderflow/index.html">Orderflow</a></li>
+            </ul>
+        </nav>
+
+        <h1>Orderflow</h1>
+
+        <fieldset>
+            <legend>Orderflow app</legend>
+
+            <div id="app">
+                <nav>
+                    <ul>
+                        <li><router-link to="/foo">Foo</router-link></li>
+                        <li><router-link to="/bar">Bar</router-link></li>
+                    </ul>
+                </nav>
+                <router-view></router-view>
+            </div>
+        </fieldset>
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

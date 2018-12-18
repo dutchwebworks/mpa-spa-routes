@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: blue;
+}
+
+.wrapper {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
