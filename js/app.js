@@ -1,13 +1,13 @@
-const Step1 = { template: '<div>Step 1</div>' }
-const Step2 = { template: '<div>Step 2</div>' }
-const Step3 = { template: '<div>Step 3</div>' }
+const Step1 = { template: '<p>Step 1 of orderflow</p>' }
+const Step2 = { template: '<p>Step 2 of orderflow</p>' }
+const Step3 = { template: '<p>Step 3 of orderflow</p>' }
 
 const router = new VueRouter({
     mode: "history",
     base: "/orderflow",
     routes : [
         {
-            path: "/step-1",
+            path: "/",
             component: Step1
         },
         {
