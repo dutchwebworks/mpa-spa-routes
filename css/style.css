@@ -1,5 +1,11 @@
-body {
-    font-family: sans-serif;
+body {    
+	font-family: Roboto, sans-serif;
+}
+
+.main-nav {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
 }
 
 nav ul {
@@ -15,11 +21,64 @@ nav ul li {
 }
 
 a {
-    color: blue;
+    font-size: 18px;
+    font-weight: 300;
+    color: deepskyblue;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
 }
 
-.wrapper {
-    max-width: 880px;
+section {
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+fieldset p {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.heading {
+	color: deeppink;
+	font-size: 42px;
+	font-weight: 300;
+	font-family: Roboto, sans-serif;
+}
+
+.paragraph {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer__body {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.footer__body a {
+    color: #444;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.footer__body + .footer__body {
+    text-align: right;
+}
+
+.footer__body a:hover {
+    color: deeppink;
 }

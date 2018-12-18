@@ -4,44 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/style.css">
     <title>Orderflow</title>
 </head>
 
 <body>
-    <div class="wrapper">   
-        <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/orderflow/index.html">Orderflow</a></li>
-            </ul>
-        </nav>
+    <section>   
+        <header>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/orderflow/index.html">Orderflow</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <h1>Orderflow</h1>
+        <main>
+            <h1 class="heading">Orderflow</h1>
+    
+            <p class="paragraph">
+                This <code>/orderflow</code> is a regular sub-directory. And within it runs a SPA Vue-router managed app.
+            </p>
 
-        <p>
-            Sub-directory with a Vue app using Vue-router.
-        </p>
+            <fieldset>
+                <legend>Vue-router managed Vue app.</legend>
+            
+                <div id="app">
+                    <nav>
+                        <ul>
+                            <li>
+                                <router-link to="/">Step 1</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/step-2">Step 2</router-link>
+                            </li>
+                            <li>
+                                <router-link to="/step-3">Step 3</router-link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <router-view></router-view>
+                </div>
+            </fieldset>
+        </main>        
 
-        <fieldset>
-            <legend>Orderflow app. controled by Vue and Vue-router</legend>
+        <footer class="footer">
+            <p class="footer__body">
+                By Dennis Burger, december 2018
+            </p>
 
-            <div id="app">
-                <nav>
-                    <ul>
-                        <li><router-link to="/">Step 1</router-link></li>
-                        <li><router-link to="/step-2">Step 2</router-link></li>
-                        <li><router-link to="/step-3">Step 3</router-link></li>
-                    </ul>
-                </nav>
-                <router-view></router-view>
-            </div>
-        </fieldset>
-
-        <footer>
-            <p><a href="https://github.com/dutchwebworks/mpa-spa-routes" target="_blank">View on Github.</a></p>
+            <p class="footer__body">
+                <a href="https://github.com/dutchwebworks/mpa-spa-routes" target="_blank">View on Github.</a>
+            </p>
         </footer>
-    </div>
+    </section>
 
     <script src="/js/libs/vue.js"></script>
     <script src="/js/libs/vue-router.js"></script>
